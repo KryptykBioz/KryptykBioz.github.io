@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KryptykBioz // root@anna_ai</title>
+  <meta name="description" content="Kryptyk Bioz — AI Engineer. Open-source local LLM agent frameworks, custom GPU-accelerated builds, and modular cognitive architectures.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Scanline / CRT overlay -->
+  <div class="crt-overlay" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#top" class="navbar__logo">
+        <span class="navbar__prompt">root@kryptykbioz</span><span class="navbar__cursor">_</span>
+      </a>
+      <nav class="navbar__links" id="navLinks">
+        <a href="#projects" class="navbar__link"><span class="navbar__num">01</span>projects</a>
+        <a href="#setup" class="navbar__link"><span class="navbar__num">02</span>setup</a>
+        <a href="#troubleshooting" class="navbar__link"><span class="navbar__num">03</span>troubleshoot</a>
+        <a href="#support" class="navbar__link"><span class="navbar__num">04</span>support</a>
+        <a href="#contact" class="navbar__link"><span class="navbar__num">05</span>contact</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__content">
+      <div class="hero__layout">
+        <div class="hero__avatar-col">
+          <div class="hero__avatar-frame">
+            <img src="images/animated_sway_avatar.gif" alt="KryptykBioz avatar" class="hero__avatar" width="340" height="340">
+          </div>
+        </div>
+        <div class="hero__text-col">
+          <p class="hero__breadcrumb">
+            <span class="text-purple">~</span>/portfolio <span class="text-dim">$</span> <span id="heroTyped"></span><span class="cursor-blink">_</span>
+          </p>
+          <h1 class="hero__title">
+            <span class="hero__title-line">KRYPTYK BIOZ</span>
+            <span class="hero__title-line hero__title-sub">[ AI&nbsp;ENGINEER // SYSTEM&nbsp;ARCHITECT ]</span>
+          </h1>
+          <p class="hero__desc">
+            Self-taught developer building self-hosted, open-source AI agent
+            frameworks &mdash; from continuous cognition loops and encrypted four-tier memory systems to
+            custom-compiled PyTorch &amp; PyAudio wheels for bleeding-edge GPU hardware.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View_Projects()</a>
+            <a href="https://github.com/KryptykBioz" target="_blank" rel="noopener" class="btn btn--ghost">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.86 3.16 8.98 7.55 10.43.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.04-3.07.67-3.72-1.3-3.72-1.3-.5-1.28-1.23-1.62-1.23-1.62-1-.69.08-.67.08-.67 1.1.08 1.68 1.14 1.68 1.14.99 1.69 2.58 1.2 3.21.92.1-.71.39-1.2.71-1.47-2.45-.28-5.02-1.22-5.02-5.45 0-1.2.43-2.19 1.14-2.96-.11-.28-.49-1.4.11-2.92 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 5.56 0c2.12-1.43 3.04-1.13 3.04-1.13.6 1.52.22 2.64.11 2.92.71.77 1.14 1.76 1.14 2.96 0 4.24-2.58 5.17-5.04 5.44.4.34.75 1.02.75 2.06 0 1.48-.01 2.68-.01 3.05 0 .29.2.64.76.53A10.97 10.97 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+              github/KryptykBioz
+            </a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat"><span class="hero__stat-num">04</span><span class="hero__stat-label">cognitive modes</span></div>
+            <div class="hero__stat"><span class="hero__stat-num">&#8734;</span><span class="hero__stat-label">memory tiers (4)</span></div>
+            <div class="hero__stat"><span class="hero__stat-num">sm_120</span><span class="hero__stat-label">custom CUDA build</span></div>
+            <div class="hero__stat"><span class="hero__stat-num">100%</span><span class="hero__stat-label">local / open-source</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-cue" aria-hidden="true">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="section__header">
+      <span class="section__eyebrow">// 01_repositories</span>
+      <h2 class="section__title">Open-Source Frameworks</h2>
+      <p class="section__intro">
+        Self-directed builds, all free to use and modify. Source, docs, and active development live on GitHub.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="project-card project-card--featured">
+        <div class="project-card__head">
+          <span class="project-card__tag">flagship</span>
+          <h3 class="project-card__title">ANNA_AI</h3>
+          <p class="project-card__path">/BASE/cognitive_loop_manager.py</p>
+        </div>
+        <p class="project-card__desc">
+          A modular, continuously running agentic AI framework built on Ollama. Separates internal
+          thought from spoken output via a two-stage cognitive architecture &mdash; reactive, proactive,
+          reflective, and action-driven modes &mdash; with a secondary AI &ldquo;speak judge&rdquo; that vetoes
+          repetitive or low-value responses before TTS fires.
+        </p>
+        <ul class="project-card__features">
+          <li>Four-tier encrypted memory (AES-256-GCM, atomic writes, cosine similarity search)</li>
+          <li>Hot-reloadable core &amp; tool modules &mdash; drop in a directory, no restart required</li>
+          <li>Discord / Twitch / YouTube live chat ingestion as raw cognitive events</li>
+          <li>Custom Tkinter GUI: config, controls, file injection, tool status, color-coded logs</li>
+          <li>Optional uncensored response model + universal kill-phrase failsafe</li>
+        </ul>
+        <div class="project-card__stack">
+          <span class="chip">Python</span>
+          <span class="chip">Ollama</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">AsyncIO</span>
+          <span class="chip">AES-256-GCM</span>
+          <span class="chip">Tkinter</span>
+        </div>
+        <div class="project-card__actions">
+          <a href="https://github.com/KryptykBioz/Anna_AI" target="_blank" rel="noopener" class="btn btn--primary btn--sm">git clone &rsaquo;</a>
+          <a href="#setup" class="btn btn--ghost btn--sm">setup guide</a>
+          <a href="diagrams/index.html" class="btn btn--ghost btn--sm">architecture diagrams</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="project-card__tag">toolkit</span>
+          <h3 class="project-card__title">AI_Agent_Tools</h3>
+          <p class="project-card__path">/tools/installed/*</p>
+        </div>
+        <p class="project-card__desc">
+          The companion plugin repository for ANNA_AI. Drop-in <code>BaseTool</code> modules the agent
+          can call dynamically &mdash; each with its own <code>information.json</code> descriptor so the
+          agent knows when and how to use it.
+        </p>
+        <ul class="project-card__features">
+          <li>Search: Bing, DuckDuckGo, Wikipedia, Memory Search</li>
+          <li>Vision: Screen capture, Drawing Canvas, Unity / Warudo animator bridges</li>
+          <li>Utility: Calendar, Reminders, Notes, Calculator, Dice Roller, System Info</li>
+          <li>Generation: Stable Diffusion image generator with dual-GPU routing</li>
+          <li>Integrations: Discord, Twitch, YouTube, Minecraft, League of Legends, MCP Bridge</li>
+        </ul>
+        <div class="project-card__stack">
+          <span class="chip">Python</span>
+          <span class="chip">BaseTool API</span>
+          <span class="chip">JSON Descriptors</span>
+        </div>
+        <div class="project-card__actions">
+          <a href="https://github.com/KryptykBioz/AI_Agent_Tools" target="_blank" rel="noopener" class="btn btn--primary btn--sm">git clone &rsaquo;</a>
+          <a href="#setup" class="btn btn--ghost btn--sm">add a tool</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="project-card__tag">build guide</span>
+          <h3 class="project-card__title">Blackwell PyTorch Wheel</h3>
+          <p class="project-card__path">torch-2.10.0a0+gitd4493c5-cp311-cp311-win_amd64.whl</p>
+        </div>
+        <p class="project-card__desc">
+          A fully documented, from-source build of PyTorch nightly targeting <code>sm_120</code>
+          (RTX 50-series / Blackwell) on Windows, with CUDA 13.0 and cuDNN 9.16 &mdash; built when
+          official wheels didn't yet support this architecture.
+        </p>
+        <ul class="project-card__features">
+          <li>VS2019 + CUDA 13.0 toolchain config, verified end-to-end</li>
+          <li>Solves Intel XPU/oneAPI false-detection conflicts on mixed GPU systems</li>
+          <li>Post-build CUDA DLL placement steps &amp; TTS/torchaudio compatibility patches</li>
+          <li>Full failure-mode table from real build logs</li>
+        </ul>
+        <div class="project-card__stack">
+          <span class="chip">CUDA 13.0</span>
+          <span class="chip">cuDNN 9.16</span>
+          <span class="chip">sm_120</span>
+          <span class="chip">MSVC 14.29</span>
+        </div>
+        <div class="project-card__actions">
+          <a href="#setup" class="btn btn--primary btn--sm">read build guide &rsaquo;</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="project-card__tag">build guide</span>
+          <h3 class="project-card__title">PyAudio 0.2.8 Wheel</h3>
+          <p class="project-card__path">pyaudio-0.2.8-cp311-cp311-win_amd64.whl</p>
+        </div>
+        <p class="project-card__desc">
+          PortAudio 19.7.0 compiled as a static lib against MSVC 2022, paired with a mandatory
+          <code>PY_SSIZE_T_CLEAN</code> source patch required for Python 3.11+ &mdash; without it,
+          builds succeed but <code>stream.write()</code> throws at runtime.
+        </p>
+        <ul class="project-card__features">
+          <li>Static PortAudio build &mdash; no runtime DLL dependency</li>
+          <li>Verified working alongside the custom PyTorch sm_120 wheel</li>
+          <li>Reinstall-from-backup workflow for instant re-deployment</li>
+        </ul>
+        <div class="project-card__stack">
+          <span class="chip">PortAudio 19.7.0</span>
+          <span class="chip">VS2022 BuildTools</span>
+          <span class="chip">Python 3.11</span>
+        </div>
+        <div class="project-card__actions">
+          <a href="#setup" class="btn btn--primary btn--sm">read build guide &rsaquo;</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ SETUP GUIDE ============ -->
+  <section class="section" id="setup">
+    <div class="section__header">
+      <span class="section__eyebrow">// 02_quickstart</span>
+      <h2 class="section__title">Setup Guide</h2>
+      <p class="section__intro">
+        Installation is fully automated. Clone the repo, run the installer, and launch &mdash;
+        the script handles everything from the virtual environment to model downloads.
+        Full documentation is in <code>SETUP.md</code> and <code>README.md</code>.
+      </p>
+    </div>
+
+    <div class="setup-flow">
+
+      <div class="setup-step">
+        <div class="setup-step__num">01</div>
+        <div class="setup-step__body">
+          <h3>Prerequisites</h3>
+          <p>Install the following before running the installer. The installer will detect and report any that are missing.</p>
+          <table class="spec-table">
+            <tbody>
+              <tr><th>Python 3.11.x</th><td><code>python.org/downloads/release/python-3119/</code> &mdash; 64-bit, Windows only</td></tr>
+              <tr><th>Git</th><td><code>git-scm.com/download/win</code> &mdash; required for tool module installs</td></tr>
+              <tr><th>Ollama</th><td><code>ollama.ai/download</code> &mdash; runs all local LLM inference</td></tr>
+            </tbody>
+          </table>
+          <p class="setup-step__note">[Note] RTX 50-series (Blackwell / sm_120) users: download the <code>blackwell_sm120_wheels</code> repository and place it in the project root before running the installer. The installer will detect your GPU and handle wheel assembly automatically.</p>
+        </div>
+      </div>
+
+      <div class="setup-step">
+        <div class="setup-step__num">02</div>
+        <div class="setup-step__body">
+          <h3>Clone &amp; run the installer</h3>
+          <p>Clone the repo, then double-click <code>INSTALL.bat</code> (or run it from a terminal). The installer walks through every step interactively.</p>
+          <pre class="code-block"><code>git clone https://github.com/KryptykBioz/Anna_AI.git
+cd Anna_AI
+INSTALL.bat</code></pre>
+          <p>The installer covers: system checks &rarr; virtual environment &rarr; Python dependencies &rarr; PyTorch &amp; GPU packages &rarr; Ollama model downloads &rarr; <code>.env</code> configuration &rarr; directory scaffold &rarr; optional components &rarr; verification.</p>
+        </div>
+      </div>
+
+      <div class="setup-step">
+        <div class="setup-step__num">03</div>
+        <div class="setup-step__body">
+          <h3>Configure agent identity</h3>
+          <p>
+            The installer prompts for a name and how the agent addresses you, writing both into <code>.env</code>.
+            Further customization lives in two files post-install:
+          </p>
+          <table class="spec-table">
+            <tbody>
+              <tr><th><code>personality/bot_info.py</code></th><td>Agent name, username, model assignments</td></tr>
+              <tr><th><code>personality/config.json</code></th><td>Advanced Ollama, voice, and memory settings</td></tr>
+              <tr><th><code>.env</code></th><td>API tokens (Discord, Twitch, YouTube) and Ollama tuning overrides</td></tr>
+            </tbody>
+          </table>
+          <p class="setup-step__note">[Note] Core Ollama models pulled during install: <code>gemma4:latest</code> (~7 GB) for all reasoning loops, and <code>nomic-embed-text</code> (~275 MB) for memory embeddings. Optional vision models (<code>qwen3-vl:8b</code>) can be pulled during install or at any time with <code>ollama pull</code>.</p>
+        </div>
+      </div>
+
+      <div class="setup-step">
+        <div class="setup-step__num">04</div>
+        <div class="setup-step__body">
+          <h3>(Optional) Install tool modules</h3>
+          <p>
+            The installer presents a numbered list of available tool modules and clones your selections from GitHub into
+            <code>BASE/tools/installed/</code>. Tools can also be added at any time manually.
+          </p>
+          <pre class="code-block"><code>git clone https://github.com/KryptykBioz/ANNA-tool-&lt;name&gt; BASE/tools/installed/&lt;name&gt;</code></pre>
+          <p>Available modules include: web search, Discord/Twitch/YouTube chat, Minecraft, image generation, screenshot vision, calendar, reminders, notes, system info, and more.</p>
+        </div>
+      </div>
+
+      <div class="setup-step">
+        <div class="setup-step__num">05</div>
+        <div class="setup-step__body">
+          <h3>(Optional) Virtual audio cables</h3>
+          <p>
+            Required for avatar lip-sync &mdash; routes TTS speech through a virtual device so the avatar animation system can read the audio signal.
+            Not needed for text-only operation. The installer can open the download page and walk through the manual steps.
+          </p>
+          <table class="spec-table">
+            <tbody>
+              <tr><th>VB-Audio Cable</th><td><code>vb-audio.com/Cable/</code> &mdash; install as Administrator, then restart</td></tr>
+              <tr><th>Tala Cables</th><td>Optional, for multi-agent audio routing</td></tr>
+            </tbody>
+          </table>
+          <p>After install, configure <code>vb_cable_name</code> in <code>personality/bot_info.py</code> to match the exact Windows device name (e.g. <code>"CABLE Input"</code>).</p>
+        </div>
+      </div>
+
+      <div class="setup-step">
+        <div class="setup-step__num">06</div>
+        <div class="setup-step__body">
+          <h3>Launch</h3>
+          <p>Double-click <code>START.bat</code> or run it from a terminal. It starts Ollama, activates the virtual environment, sets CUDA paths, and launches the GUI. The cognitive loop begins automatically.</p>
+          <pre class="code-block"><code>START.bat</code></pre>
+          <p class="setup-step__note">[Note] If Ollama is not already running, <code>START.bat</code> starts it automatically and waits for initialization before launching the agent.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ TROUBLESHOOTING ============ -->
+  <section class="section section--alt" id="troubleshooting">
+    <div class="section__header">
+      <span class="section__eyebrow">// 03_known_failure_modes</span>
+      <h2 class="section__title">Troubleshooting</h2>
+      <p class="section__intro">Common issues pulled directly from build &amp; runtime logs.</p>
+    </div>
+
+    <div class="faq" id="faqList">
+
+      <details class="faq__item" open>
+        <summary class="faq__q">
+          <span class="faq__icon" aria-hidden="true">$</span>
+          <code>SystemError: PY_SSIZE_T_CLEAN macro must be defined</code>
+        </summary>
+        <div class="faq__a">
+          <p><strong>Cause:</strong> The PyAudio wheel was built without the required source patch for Python 3.11+.</p>
+          <p><strong>Fix:</strong> Re-apply the <code>PY_SSIZE_T_CLEAN</code> patch to <code>_portaudiomodule.c</code>, clean the build directory (<code>build/</code>, <code>dist/</code>, <code>*.egg-info</code>), and rebuild.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span class="faq__icon" aria-hidden="true">$</span>
+          <code>torch.cuda.is_available()</code> returns <code>False</code> after install
+        </summary>
+        <div class="faq__a">
+          <p><strong>Cause:</strong> CUDA/cuDNN runtime DLLs were not copied into <code>torch/lib</code> after installing a custom-built wheel.</p>
+          <p><strong>Fix:</strong></p>
+          <pre class="code-block"><code>Copy-Item "$CUDA_PATH\bin\x64\*.dll" ".\venv\Lib\site-packages\torch\lib" -Force
+Copy-Item "$CUDA_PATH\bin\cudnn64_9.dll" ".\venv\Lib\site-packages\torch\lib" -Force</code></pre>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span class="faq__icon" aria-hidden="true">$</span>
+          <code>SYCL: feature test compile failed</code> during PyTorch build
+        </summary>
+        <div class="faq__a">
+          <p><strong>Cause:</strong> CMake detected Intel oneAPI/SYCL from an Arc GPU present on the same system.</p>
+          <p><strong>Fix:</strong> Set <code>$env:USE_XPU = "0"</code> before configuring the build.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span class="faq__icon" aria-hidden="true">$</span>
+          32-bit compiler (<code>HostX86\x86\cl.exe</code>) selected during build
+        </summary>
+        <div class="faq__a">
+          <p><strong>Cause:</strong> <code>vcvars64.bat</code> was not initialized before running build commands.</p>
+          <p><strong>Fix:</strong> Run the x64 environment script first, in the same shell:</p>
+          <pre class="code-block"><code>cmd /c '"...\BuildTools\VC\Auxiliary\Build\vcvars64.bat" && powershell'</code></pre>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span class="faq__icon" aria-hidden="true">$</span>
+          TTS import fails after installing custom PyTorch
+        </summary>
+        <div class="faq__a">
+          <p><strong>Cause:</strong> <code>torchaudio</code> conflicts with the custom PyTorch build.</p>
+          <p><strong>Fix:</strong> Uninstall <code>torchaudio</code> and patch <code>TTS/tts/models/vits.py</code> to make the import optional:</p>
+          <pre class="code-block"><code>pip uninstall torchaudio -y
+
+# vits.py
+try:
+    import torchaudio
+except ImportError:
+    torchaudio = None</code></pre>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span class="faq__icon" aria-hidden="true">$</span>
+          Encrypted memory files unreadable after moving install
+        </summary>
+        <div class="faq__a">
+          <p><strong>Cause:</strong> Tiers 1&ndash;3 of the memory system are encrypted with AES-256-GCM using a per-install key stored in <code>personality/memory/.machine_secret</code>.</p>
+          <p><strong>Fix:</strong> Never delete <code>.machine_secret</code> without also deleting the encrypted memory files &mdash; doing so permanently locks the data. To reset memory cleanly, delete both together; the agent starts with a blank history on next launch.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span class="faq__icon" aria-hidden="true">$</span>
+          <code>vswhere.exe</code> returns empty / VS not detected
+        </summary>
+        <div class="faq__a">
+          <p><strong>Cause:</strong> Visual Studio is installed but not registered with the VS installer database.</p>
+          <p><strong>Fix:</strong> Skip <code>vswhere</code> entirely and reference <code>vcvars64.bat</code> by its direct install path.</p>
+        </div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">
+          <span class="faq__icon" aria-hidden="true">$</span>
+          A custom tool isn't being picked up by the agent
+        </summary>
+        <div class="faq__a">
+          <p><strong>Cause:</strong> Missing or malformed <code>information.json</code>, or the tool directory isn't under <code>BASE/tools/installed/</code>.</p>
+          <p><strong>Fix:</strong> Confirm the directory contains both <code>tool.py</code> (a <code>BaseTool</code> subclass) and <code>information.json</code> with at minimum <code>tool_name</code>, <code>control_variable_name</code>, <code>tool_description</code>, and <code>available_commands</code>. <code>ToolLifecycleManager</code> discovers new tools on next startup or hot reload &mdash; no manual registration needed.</p>
+        </div>
+      </details>
+
+    </div>
+
+    <p class="troubleshooting__more">
+      Not seeing your issue? Open an issue on the relevant repo &mdash;
+      <a href="https://github.com/KryptykBioz/Anna_AI/issues" target="_blank" rel="noopener">Anna_AI/issues</a>
+      or <a href="https://github.com/KryptykBioz/AI_Agent_Tools/issues" target="_blank" rel="noopener">AI_Agent_Tools/issues</a>.
+    </p>
+  </section>
+
+  <!-- ============ SUPPORT / DONATE ============ -->
+  <section class="section" id="support">
+    <div class="section__header">
+      <span class="section__eyebrow">// 04_support_the_project</span>
+      <h2 class="section__title">Keep This Running</h2>
+      <p class="section__intro">
+        ANNA_AI is free, open-source, and self-funded &mdash; built by a self-taught developer and
+        current college student in spare time. If it's useful to you, here's how to help it keep going.
+      </p>
+    </div>
+
+    <div class="support-grid">
+      <a href="https://github.com/sponsors/KryptykBioz" target="_blank" rel="noopener" class="support-card">
+        <div class="support-card__icon" aria-hidden="true">&#9733;</div>
+        <h3>GitHub Sponsors</h3>
+        <p>Recurring or one-time support directly through GitHub.</p>
+        <span class="support-card__cta">sponsor &rsaquo;</span>
+      </a>
+
+      <a href="https://ko-fi.com/kryptykbioz" target="_blank" rel="noopener" class="support-card">
+        <div class="support-card__icon" aria-hidden="true">&#9749;</div>
+        <h3>Ko-fi</h3>
+        <p>Buy a coffee &mdash; one-time donations, no account required.</p>
+        <span class="support-card__cta">donate &rsaquo;</span>
+      </a>
+
+      <a href="https://www.youtube.com/@KryptykBioz" target="_blank" rel="noopener" class="support-card">
+        <div class="support-card__icon" aria-hidden="true">&#9654;</div>
+        <h3>YouTube</h3>
+        <p>Subscribe and watch &mdash; development streams &amp; build logs.</p>
+        <span class="support-card__cta">@KryptykBioz &rsaquo;</span>
+      </a>
+
+      <a href="https://www.twitch.tv/kryptykbioz" target="_blank" rel="noopener" class="support-card">
+        <div class="support-card__icon" aria-hidden="true">&#9711;</div>
+        <h3>Twitch</h3>
+        <p>Follow for live coding &amp; agent development sessions.</p>
+        <span class="support-card__cta">kryptykbioz &rsaquo;</span>
+      </a>
+
+      <a href="https://discord.com/invite/cDcBdmkZT" target="_blank" rel="noopener" class="support-card">
+        <div class="support-card__icon" aria-hidden="true">&#9670;</div>
+        <h3>Discord</h3>
+        <p>Join the Anna_AI development server for discussion, updates, and support.</p>
+        <span class="support-card__cta">join server &rsaquo;</span>
+      </a>
+    </div>
+
+    <p class="support__note">
+      Even a star on <a href="https://github.com/KryptykBioz" target="_blank" rel="noopener">GitHub</a> helps
+      this reach more people. Thanks for checking it out.
+    </p>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--alt" id="contact">
+    <div class="section__header">
+      <span class="section__eyebrow">// 05_contact</span>
+      <h2 class="section__title">Get In Touch</h2>
+      <p class="section__intro">
+        Questions, bug reports, collaboration ideas &mdash; reach out through any of these channels.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-terminal">
+        <div class="contact-terminal__bar">
+          <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+          <span class="contact-terminal__title">contact.sh</span>
+        </div>
+        <pre class="contact-terminal__body"><code><span class="text-dim">$</span> whoami
+kryptyk__bioz
+
+<span class="text-dim">$</span> cat contact.json</code></pre>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-list__key">email</span>
+            <a href="mailto:KryptykBioz@outlook.com">KryptykBioz@outlook.com</a>
+          </li>
+          <li>
+            <span class="contact-list__key">github</span>
+            <a href="https://github.com/KryptykBioz" target="_blank" rel="noopener">github.com/KryptykBioz</a>
+          </li>
+          <li>
+            <span class="contact-list__key">discord</span>
+            <a href="https://discord.com/invite/cDcBdmkZT" target="_blank" rel="noopener">Anna_AI Dev Server</a>
+          </li>
+          <li>
+            <span class="contact-list__key">linkedin</span>
+            <a href="https://www.linkedin.com/in/kryptykbioz-375848356/" target="_blank" rel="noopener">linkedin.com/in/kryptykbioz</a>
+          </li>
+          <li>
+            <span class="contact-list__key">location</span>
+            <span>Tokyo, Japan</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="#" method="POST">
+        <p class="contact-form__hint">
+          [Note] This form opens your email client with the message pre-filled &mdash; no server required.
+        </p>
+        <label class="field">
+          <span class="field__label">name</span>
+          <input type="text" name="name" id="cf-name" required>
+        </label>
+        <label class="field">
+          <span class="field__label">email</span>
+          <input type="email" name="email" id="cf-email" required>
+        </label>
+        <label class="field">
+          <span class="field__label">message</span>
+          <textarea name="message" id="cf-message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">send_message()</button>
+        <p class="contact-form__status" id="cfStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__line"><span class="text-purple">&gt;</span> ANNA_AI &amp; AI_Agent_Tools &mdash; open-source, free for personal use.</p>
+      <p class="footer__line text-dim">&copy; <span id="year"></span> Kryptyk "KryptykBioz" Bioz. Built with vanilla HTML/CSS/JS.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/typewriter.js" defer></script>
+  <script src="js/scroll-effects.js" defer></script>
+  <script src="js/contact-form.js" defer></script>
+</body>
+</html>

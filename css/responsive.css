@@ -1,0 +1,132 @@
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+/* --- Tablet --- */
+@media (max-width: 900px) {
+  .hero__layout {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: var(--space-lg);
+  }
+
+  .hero__avatar-col {
+    order: -1;
+  }
+
+  .hero__avatar,
+  .hero__avatar-frame {
+    width: 260px;
+    height: 260px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .support-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: var(--space-md);
+  }
+}
+
+/* --- Mobile nav --- */
+@media (max-width: 760px) {
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--bg-panel);
+    border-bottom: var(--border-thin);
+    padding: var(--space-md);
+    gap: var(--space-md);
+    transform: translateY(-8px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-med), transform var(--transition-med);
+  }
+
+  .navbar__links.is-open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .navbar__link {
+    font-size: 0.95rem;
+  }
+
+  .navbar.is-open .navbar__toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .navbar.is-open .navbar__toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar.is-open .navbar__toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+/* --- Small mobile --- */
+@media (max-width: 540px) {
+  .hero__avatar,
+  .hero__avatar-frame {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero {
+    padding-top: 5rem;
+  }
+
+  .hero__stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .setup-step {
+    grid-template-columns: 1fr;
+    gap: var(--space-xs);
+  }
+
+  .setup-step__num {
+    font-size: 1.2rem;
+  }
+
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__actions .btn {
+    justify-content: center;
+  }
+
+  .section {
+    padding: var(--space-xl) var(--space-sm);
+  }
+
+  .section--alt > * {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+}

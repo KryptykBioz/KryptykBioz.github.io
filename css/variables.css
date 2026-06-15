@@ -1,0 +1,53 @@
+/* ============================================
+   DESIGN TOKENS
+   ============================================ */
+
+:root {
+  /* --- Core palette --- */
+  --bg-void:        #060709;   /* near-black base */
+  --bg-panel:       #0b0e12;   /* panel/card surface */
+  --bg-panel-alt:   #0e1218;   /* alt section surface */
+  --bg-raised:      #11161d;   /* raised elements, inputs */
+
+  --green:          #39ff8c;   /* primary neon green */
+  --green-dim:      #1f8a52;   /* dimmed green for borders */
+  --green-glow:     rgba(57, 255, 140, 0.35);
+
+  --purple:         #b14dff;   /* primary neon purple */
+  --purple-dim:     #6a2fa8;
+  --purple-glow:    rgba(177, 77, 255, 0.35);
+
+  --text-primary:   #d9ffe9;   /* slightly green-tinted off-white */
+  --text-dim:       #5d7a6f;   /* muted green-grey for comments/labels */
+  --text-muted:     #8aa79a;
+
+  --danger:         #ff4d6d;
+  --warning:        #ffd866;
+
+  /* --- Typography --- */
+  --font-display:   'JetBrains Mono', 'Share Tech Mono', monospace;
+  --font-mono:      'Share Tech Mono', 'JetBrains Mono', monospace;
+
+  /* --- Spacing scale --- */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2.5rem;
+  --space-xl:  4rem;
+  --space-2xl: 6rem;
+
+  /* --- Layout --- */
+  --max-width: 1180px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --border-thin: 1px solid var(--green-dim);
+
+  /* --- Effects --- */
+  --glow-green-sm:  0 0 8px var(--green-glow);
+  --glow-green-md:  0 0 18px var(--green-glow);
+  --glow-purple-sm: 0 0 8px var(--purple-glow);
+  --glow-purple-md: 0 0 18px var(--purple-glow);
+
+  --transition-fast: 0.15s ease;
+  --transition-med:  0.3s ease;
+}
