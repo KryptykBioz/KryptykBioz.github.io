@@ -322,12 +322,20 @@ html, body {
   background: var(--bg-panel);
   border-top: var(--border-thin);
   border-bottom: var(--border-thin);
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .section--alt > * {
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+}
+
+.section--alt .section__header {
+  max-width: var(--max-width);
 }
 
 .section__header {
@@ -590,6 +598,8 @@ html, body {
 .contact-list a {
   color: var(--green);
   border-bottom: 1px dotted var(--green-dim);
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .contact-list a:hover {
